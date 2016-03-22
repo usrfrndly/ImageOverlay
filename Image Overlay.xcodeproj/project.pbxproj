@@ -429,6 +429,7 @@
 					/Users/jaclynhorowitz/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = "Image Overlay/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.levinriegner.Image-Overlay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,6 +447,7 @@
 					/Users/jaclynhorowitz/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = "Image Overlay/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.levinriegner.Image-Overlay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -519,6 +521,7 @@
 				2107D74C1CA08E8700736DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2107D74D1CA08E8700736DF2 /* Build configuration list for PBXNativeTarget "Image OverlayTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +530,7 @@
 				2107D74F1CA08E8700736DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2107D7501CA08E8700736DF2 /* Build configuration list for PBXNativeTarget "Image OverlayUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +539,7 @@
 				2107D7521CA08E8700736DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

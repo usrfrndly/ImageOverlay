@@ -22,7 +22,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Image Overlay/ViewController.swift"
@@ -70,7 +70,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Image Overlay/ViewController.swift"
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Image Overlay/ViewController.swift"
-            timestampString = "480362356.759682"
+            timestampString = "480367062.406966"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "213"
-            endingLineNumber = "213"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
             landmarkName = "getFacebookUserInfo()"
             landmarkType = "5">
          </BreakpointContent>
@@ -121,13 +121,13 @@
                   symbolName = "Image_Overlay.ViewController.(loginButtonClicked (Image_Overlay.ViewController) -&gt; () -&gt; ()).(closure #1).(closure #1)"
                   moduleName = "Image Overlay"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaclynhorowitz/Library/Autosave%20Information/Image%20Overlay/Image%20Overlay/ViewController.swift"
-                  timestampString = "480361896.099073"
+                  urlString = "file:///Users/jaclynhorowitz/Desktop/LR/Image%20Overlay/Image%20Overlay/ViewController.swift"
+                  timestampString = "480368607.481305"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "137"
-                  endingLineNumber = "137"
-                  offsetFromSymbolStart = "857">
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "780">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -136,15 +136,31 @@
                   symbolName = "Image_Overlay.ViewController.(loginButtonClicked (Image_Overlay.ViewController) -&gt; () -&gt; ()).(closure #1).(closure #1).(closure #1)"
                   moduleName = "Image Overlay"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaclynhorowitz/Library/Autosave%20Information/Image%20Overlay/Image%20Overlay/ViewController.swift"
-                  timestampString = "480361896.099173"
+                  urlString = "file:///Users/jaclynhorowitz/Desktop/LR/Image%20Overlay/Image%20Overlay/ViewController.swift"
+                  timestampString = "480368607.481439"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "137"
-                  endingLineNumber = "137"
-                  offsetFromSymbolStart = "1143">
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "1028">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Image Overlay/ViewController.swift"
+            timestampString = "480367045.767939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -120,6 +120,39 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, FBSDKSharingDe
                 if(fbloginresult.grantedPermissions.contains("email"))
                 {
                     if((FBSDKAccessToken.currentAccessToken()) != nil){
+//                            FBSDKGraphRequest(graphPath: "me", parameters: nil).startWithCompletionHandler({ (connection, result, error)
+//                                -> Void in
+//                                NSLog("This logged in user: \(result)")
+//                                if error == nil{
+//                                    if let dict = result as? Dictionary<NSString, AnyObject>{
+//                                        NSLog("This is dictionary of user infor getting from facebook:")
+//                                        print(dict)
+//                                        
+//                                        let facebookID:NSString = dict["id"] as AnyObject? as! NSString
+//                                        let pictureURL = "https://graph.facebook.com/\(facebookID)/picture?type=large&return_ssl_resources=1"
+//                                        //
+//                                        var URLRequest = NSURL(string: pictureURL)
+//                                        var URLRequestNeeded = NSURLRequest(URL: URLRequest!)
+//                                        println(pictureURL)
+//                                        
+//                                        
+//                                        
+//                                        NSURLConnection.sendAsynchronousRequest(URLRequestNeeded, queue: NSOperationQueue.mainQueue(), completionHandler: {(response: NSURLResponse!,data: NSData!, error: NSError!) -> Void in
+//                                            if error == nil {
+//                                                //data is the data of profile image you need. Just create UIImage from it
+//                                                image = UIImage(
+//                                                
+//                                            }
+//                                            else {
+//                                                println("Error: \(error)")
+//                                            }
+//                                        })
+//
+//
+//                                    }
+//                                }
+//                            })
+                        
                         FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email"]).startWithCompletionHandler({ (connection, result, error) -> Void in
                             if (error == nil){
                                 NSLog("Logged in")
@@ -140,6 +173,8 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, FBSDKSharingDe
                     }
                 }
             })
+        
+      
         }
         //        login.logInWithPublishPermissions(["publish_actions"], fromViewController: self, handler: { (result:FBSDKLoginManagerLoginResult!, error:NSError!)
         //            -> Void in
@@ -176,8 +211,19 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, FBSDKSharingDe
         //    }
     
              func sharer(sharer: FBSDKSharing!, didCompleteWithResults results: [NSObject : AnyObject]!) {
-            print("didCompleteWithResults")
-            alertShow("Photo")
+            NSLog("didCompleteWithResults \(results)")
+            var separatedId = results["postId"]!.componentsSeparatedByString("_")
+            var pid = separatedId[1]
+            //alertShow("Photo")
+                
+            //    let facebookURL = NSURL(fileURLWithPath:"fb://photo.php?fbid=\(pid)&makeprofile=1");
+                //let facebookURL = NSURL(string:"fb://page/\(results["postId"]!)");
+                let facebookURL = NSURL(string:"fb://profile");
+                if (UIApplication.sharedApplication().canOpenURL(facebookURL!)){
+                    UIApplication.sharedApplication().openURL(facebookURL!);
+                } else {
+                    UIApplication.sharedApplication().openURL( NSURL(string: "https://facebook.com/photo.php?fbid=\(pid)&makeprofile=1")!);
+               }
         }
         
         func sharer(sharer: FBSDKSharing!, didFailWithError error: NSError!) {
