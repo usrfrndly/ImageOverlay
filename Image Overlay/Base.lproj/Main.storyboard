@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +17,77 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2F-iO-6Cd">
+                                <rect key="frame" x="532" y="562" width="48" height="30"/>
+                                <state key="normal" title="Gallery"/>
+                                <connections>
+                                    <action selector="galleryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d7H-fc-VUt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjJ-pc-RKc">
+                                <rect key="frame" x="265.5" y="562" width="69" height="30"/>
+                                <state key="normal" title="Profile Pic"/>
+                                <connections>
+                                    <action selector="profilePicButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LuK-vI-UFS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4k-mh-Lcu">
+                                <rect key="frame" x="20" y="562" width="58" height="30"/>
+                                <state key="normal" title="Take Pic"/>
+                                <connections>
+                                    <action selector="takePicPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s6Q-QJ-hKV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ia0-Tj-oPQ">
+                                <rect key="frame" x="27" y="524" width="45" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveImagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rpH-Wd-Zky"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNf-bJ-thr">
+                                <rect key="frame" x="231" y="524" width="138" height="30"/>
+                                <state key="normal" title="Upload to Facebook"/>
+                                <connections>
+                                    <action selector="saveImagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dbo-Fo-kFB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pjJ-pc-RKc" firstAttribute="baseline" secondItem="F2F-iO-6Cd" secondAttribute="baseline" id="0rY-mY-GUn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N4k-mh-Lcu" secondAttribute="bottom" constant="8" symbolic="YES" id="2V6-YS-JGU"/>
+                            <constraint firstItem="N4k-mh-Lcu" firstAttribute="top" secondItem="ia0-Tj-oPQ" secondAttribute="bottom" constant="8" id="9pt-OX-AIY"/>
+                            <constraint firstItem="pjJ-pc-RKc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="247" id="Ep3-Rt-V2L"/>
+                            <constraint firstItem="WNf-bJ-thr" firstAttribute="centerY" secondItem="ia0-Tj-oPQ" secondAttribute="centerY" id="HOL-aF-K1J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F2F-iO-6Cd" secondAttribute="trailing" id="ImN-d5-bVD"/>
+                            <constraint firstItem="N4k-mh-Lcu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PBY-cF-Akg"/>
+                            <constraint firstItem="ia0-Tj-oPQ" firstAttribute="centerX" secondItem="N4k-mh-Lcu" secondAttribute="centerX" id="TJ8-Ix-KKl"/>
+                            <constraint firstItem="N4k-mh-Lcu" firstAttribute="baseline" secondItem="pjJ-pc-RKc" secondAttribute="baseline" id="WBW-CW-z2X"/>
+                            <constraint firstItem="pjJ-pc-RKc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ccF-OY-rWf"/>
+                            <constraint firstItem="WNf-bJ-thr" firstAttribute="centerX" secondItem="pjJ-pc-RKc" secondAttribute="centerX" id="lAB-Xa-GlR"/>
+                            <constraint firstItem="pjJ-pc-RKc" firstAttribute="baseline" secondItem="N4k-mh-Lcu" secondAttribute="baseline" id="nHJ-bi-M1k"/>
+                            <constraint firstItem="ia0-Tj-oPQ" firstAttribute="leading" secondItem="N4k-mh-Lcu" secondAttribute="leading" constant="7" id="ojU-yQ-z6e"/>
+                            <constraint firstItem="F2F-iO-6Cd" firstAttribute="baseline" secondItem="N4k-mh-Lcu" secondAttribute="baseline" id="vu6-Vm-UPD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ep3-Rt-V2L"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="galleryButton" destination="F2F-iO-6Cd" id="LxI-Z5-Cwg"/>
+                        <outlet property="myLoginButton" destination="WNf-bJ-thr" id="kAf-Sd-nsp"/>
+                        <outlet property="profilePicButton" destination="pjJ-pc-RKc" id="EGB-S5-OFa"/>
+                        <outlet property="saveButton" destination="ia0-Tj-oPQ" id="aD8-vc-FDX"/>
+                        <outlet property="takePicButton" destination="N4k-mh-Lcu" id="PE5-PQ-45a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="303"/>
         </scene>
     </scenes>
 </document>
